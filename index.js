@@ -1,11 +1,18 @@
 var fs = require("fs");
 var async = require("async");
 var path = require("path");
+var map = require("map");
 //var waterfall = require("run-waterfall");
 
 fs.readdir("files", function(err, files){
   console.log(files);
+  async.each(files, function(name, callback) {
+    fs.readFile("needle", "utf8" function(err, data) {
+  });
+
 })
+
+
 
 
 
